@@ -155,11 +155,11 @@ class SongTag(object):
 
 class MPDSong(object):
     BASE_TAGS = (
-        SongTag('artist', u"<Unknown>", 'albumartist', 'composer', 'performer'),
-        SongTag('title', u"<Unknown>", 'name'),
-        SongTag('name', u"<Unknown>", 'title'),
+        SongTag('artist', u"", 'albumartist', 'composer', 'performer'),
+        SongTag('title', u"", 'name'),
+        SongTag('name', u"", 'title'),
         SongTag('time', u"--:--"),
-        SongTag('file', u"<Unknown>"),
+        SongTag('file', u""),
     )
 
     def __init__(self, **kwargs):
